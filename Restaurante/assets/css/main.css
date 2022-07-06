@@ -107,3 +107,25 @@ body{
     animation-iteration-count: infinite;
     animation-fill-mode: both;
 }
+
+.fire-right{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: shake 2s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.main-fire{
+    position: absolute;
+    top: 15%;
+    right: -25%;
+    height: 80%;
+    width: 80%;
+    background-color: #ef5a00;
+    transform: scaleX(0.8) rotate(45deg);
+    border-radius: 0 40% 60% 40%;
+    filter: drop-shadow(0 0 10px #d43322);
+}
+
