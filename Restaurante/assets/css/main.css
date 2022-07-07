@@ -6,6 +6,26 @@ body{
     background-color: #111;
 }
 
+/*
+    coso de letras
+*/
+
+.information{
+    color: #ff7800;
+
+}
+h3{
+    color: rgb(190, 0, 238);
+}
+
+.panel{
+    color: aqua;
+}
+
+
+/*
+Animación de llamita
+ */
 @keyframes scaleUpDouwn {
     0%,
     100%{
