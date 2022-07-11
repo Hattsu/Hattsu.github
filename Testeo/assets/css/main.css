@@ -30,4 +30,18 @@ td{
 
 a{
     text-decoration: none; /*Controlar la linea referenciada*/
+    color: red;
+}
+
+.title{
+    text-transform: uppercase;
+}
+
+.parrafo{
+    line-height: 30px;
+    font-weight: 200;
+}
+
+.table-1{
+    width: 100%;
 }
