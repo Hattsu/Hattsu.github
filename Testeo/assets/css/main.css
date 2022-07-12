@@ -1,3 +1,14 @@
+/*
+Niveles de importancia en la jerarquia
+1. !important
+2. atributo style
+
+Selectores
+3. Selector por ID -> id="" , #
+4. Selector de clase, atributos y pseudoclases
+5. Selectores de tipo y pseudo elementos
+*/
+
 html{
     font-family: 'Edu SA Beginner', cursive;
 }
@@ -13,6 +24,7 @@ html{
     display: flex; 
     align-items: center;
     justify-content: center;
+    
 }
 
 .content{
@@ -21,12 +33,13 @@ html{
     background-color: #fff;
     width: 100%;
     height: 100%;
-    
+
+    border-radius: 2em; /*controlar el borde en una sola linea de codigo*/
 }
 
-td{
+/*td{
     border: solid 1px;
-}
+}*/
 
 a{
     text-decoration: none; /*Controlar la linea referenciada*/
@@ -34,7 +47,7 @@ a{
 }
 
 .title{
-    text-transform: uppercase;
+    text-transform: uppercase; /*controlar el texto (mayus, minus, etc)*/
 }
 
 .parrafo{
@@ -44,4 +57,24 @@ a{
 
 .table-1{
     width: 100%;
+    border-spacing: 0;
 }
+
+.table-1 td, .table-1 th{
+    padding: 1em;
+    text-align: left;
+}
+
+.table-1 tr:nth-child(even){
+    background-color:  #cfd8dc;
+}
+
+.material-icons{
+    color: red;
+}
+
+.title{
+    border-bottom: #434343 solid 4px;
+    padding: 1em;
+}
+
