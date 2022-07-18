@@ -34,7 +34,31 @@ html{
     width: 100%;
     height: 100%;
 
-    border-radius: 2em; /*controlar el borde en una sola linea de codigo*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
+    border-radius: 4em; /*controlar el borde en una sola linea de codigo*/
+
+    position: relative;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white; 
+    border-radius: 50%;
+    background-color: #202020;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*td{
@@ -78,3 +102,25 @@ a{
     padding: 1em;
 }
 
+.content{
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+a:hover, span:hover{
+    color: purple;
+    font-size: 30p x;
+}
+
+a:active, span:active{
+    background-color: gold;
+}
+
+a:focus{
+    background-color: cyan;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
