@@ -1,0 +1,24 @@
+/*
+Niveles de importancia en la jerarquia
+1. !important
+2. atributo style
+
+Selectores
+3. Selector por ID -> id="" , #
+4. Selector de clase, atributos y pseudoclases
+5. Selectores de tipo y pseudo elementos
+
+
+Conceptos de "position"
+nomenclatura -> position:...;
+
+1. static: valor predeterminado en la caja, el elemento no se encuentra posicionado, por lo que no se
+altera la posiciòn. 
+2. relative: modifica la posiciòn a partir de la posiciòn en la que se encontraba
+3. absolute: modifica la posiciòn de manera relativa a la pantalla (diupor)/checar sintaxis correcta.
+La posiciòn si se ve afectada por el scroll.
+4. fixed: modifica la posiciòn de manera relativa a la pantalla (diupor)/checar sintaxis correcta.
+La posiciòn no se ve afectada por el scroll.
+5. sticky: crea el efecto de su nombre, situandose en los valores de modificaciòn generaneo una
+fijaciòn al llegar a la posiciòn.
+*/
