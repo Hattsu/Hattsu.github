@@ -1,64 +1,173 @@
-/*tm
-Niveles de importancia en la jerarquia
-1. !important
-2. atributo style
-
-Selectores
-3. Selector por ID -> id="" , #
-4. Selector de clase, atributos y pseudoclases
-5. Selectores de tipo y pseudo elementos
-*/
-
-/*Todo*/
-html{
-    font-family: 'Edu SA Beginner', cursive;
-}
-
-/*Contendo general*/
-.container{
-    background: #000000;  /* fallback for old browsers */
-    /*background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    height: 100vh; /*vh: viewport height altura, viewport width anchura*/
-}
-
-/*Barra de navegación*/
-
-.navegation{
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 57%, rgba(255,49,49,1) 100%);
-
+*{
+    margin: 10px;
     padding: 10px;
+    box-sizing: border-box;
 }
 
-.navegation-link{
-
-    /*Colores*/
-    display: inline-block;
-    background: #000000;
-    color: #fff;
+/**/
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
 
     /**/
-    padding: 9px 30px;
+    .header{
+        background: #000;
+
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+        /**/
+        .menu{
+            background: #4C3A51;
+            background: rgb(76, 58, 81);
+
+            display: flex;
+            flex-flow: row nowrap;
+
+            height: 100px;
+
+            align-items: center;
+        }
+
+            /**/
+            .logo{
+                background: #774360;
+                background: rgb(119, 67, 96);
+
+                flex: 1 1 auto;
+
+                height: 30px;
+            }
+
+            /**/
+            .nav{
+                background: #774360;
+                background: rgb(119, 67, 96);
+
+                flex: 1 1 auto;
+
+                height: 30px;
+            }
+
+            /**/
+            .social{
+                background: #774360;
+                background: rgb(119, 67, 96);
+
+                flex: 1 1 auto;
+
+                height: 30px;
+            }
+        
+        /**/
+        .texto-principal{
+            background: #B25068;
+            background: rgb(178, 80, 104);
+        }
+
+            /**/
+            h1{
+                background: #E7AB79;
+                background: rgb(231, 171, 121);
+            }
 
     /**/
-    text-decoration: none;
+    .section{
+        background: #000;
+
+        display: flex;
+    }
+
+        /**/
+        .articulos{
+            background: #3D0000;
+            background: rgb(61, 0, 0);
+
+            display: flex;
+            flex: 2 1 auto;
+            flex-flow: row wrap;
+
+        }
+
+            /**/
+            .article{
+                background: #FF0000;
+                background: rgb(255, 0, 0);
+
+                flex: 1 1 40%;
+            }
+
+            /**/
+            .navegacion{
+                background: #E7AB79;
+                background: rgb(231, 171, 121);
+                
+                flex: 1 1 100%;
+            }
+
+        /**/
+        .aside{
+            background: #371B58;
+            background: rgb(55, 27, 88);
+
+            flex: 1 1 auto;
+        }
+
+            /**/
+            .publicidad{
+                background: #4C3575;
+                background: rgb(76, 53, 117);
+            }
+
+    /**/
+    .footer{
+        background: #000;
+
+        display: flex;
+
+        justify-content: center;
+    }
+
+        /**/
+        .pie{
+            background: #810955;
+            background: rgb(129, 9, 85);
+
+            width: 300px;
+
+        }
+
+/**/
+@media all and (max-width:800px) {
+    /**/
+    .section{
+        flex-direction: column;
+    }
+    /**/
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    /**/
+    .aside{
+        display: flex;
+        
+        justify-content: center;
+    }
 }
 
-.navegation-link:hover{
-    background-color: rgba(255,49,49,1);
+/**/
+@media all and (max-width:600px) {
+    .articulos{
+        flex-direction: column;
+    }   
 }
 
-.encabezado{
-    color: #fff;
-}
-
-.encabezado{
-    animation: fadeInLeft 1s;
-}
-
-.introduction-text{
-    color: #fff;
-    
+/**/
+@media all and (max-width:400px) {
+    .aside{
+        flex-direction: column;
+    }
 }
