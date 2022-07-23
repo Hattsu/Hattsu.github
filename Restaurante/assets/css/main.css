@@ -1,8 +1,20 @@
 *{
-    margin: 10px;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
+
+/**/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/**/
+a{
+    text-decoration: none; /*Controlar la linea referenciada*/
+    color: #fff;
+}
+
 
 /**/
 .padre{
@@ -12,7 +24,10 @@
 
     /**/
     .header{
-        background: #000;
+        background: url(../images/fondo3.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
 
         display: flex;
         flex-flow: column nowrap;
@@ -20,57 +35,105 @@
 
         /**/
         .menu{
-            background: #4C3A51;
-            background: rgb(76, 58, 81);
+           /* background: #4C3A51;
+            background: rgb(76, 58, 81);*/
+            background: rgba(0, 0, 0, .1);
 
             display: flex;
             flex-flow: row nowrap;
 
-            height: 100px;
+            height: 60px;
 
             align-items: center;
+
+            border-bottom: 1px solid rgba(255, 255, 255, .5);
         }
 
             /**/
             .logo{
-                background: #774360;
-                background: rgb(119, 67, 96);
+                /*background: #774360;
+                background: rgb(119, 67, 96);*/
 
                 flex: 1 1 auto;
 
-                height: 30px;
+                /*height: 30px;*/
+
+                
             }
+                .logo a{
+                    color: #fff;
+                    font-size: 30px;
+                    font-family: bold;
+                }
+                .logo a:hover{
+                    /*background-color: purple;*/
+                    color: yellow;
+                }
 
             /**/
             .nav{
-                background: #774360;
-                background: rgb(119, 67, 96);
+                /*background: #774360;
+                background: rgb(119, 67, 96);*/
 
                 flex: 1 1 auto;
 
-                height: 30px;
+                /*height: 30px;*/
             }
+                .nav a{
+                    color: #fff;
+                    font-family: bold;
+                }
+                .nav a:hover{
+                    /*background-color: purple;*/
+                    color: yellow;
+                }
 
             /**/
             .social{
-                background: #774360;
-                background: rgb(119, 67, 96);
+                /*background: #774360;
+                background: rgb(119, 67, 96);*/
 
+                display: flex;
                 flex: 1 1 auto;
 
-                height: 30px;
+                /*height: 30px;*/
             }
+                .social a{
+                    color: #fff;
+                    font-family: bold;
+                    font-size: 18px;
+                    padding: 0 5px;
+                }
+                .social a:hover{
+                    /*background-color: purple;*/
+                    color: yellow;
+                }
         
         /**/
         .texto-principal{
-            background: #B25068;
-            background: rgb(178, 80, 104);
+            /*background: #B25068;
+            background: rgb(178, 80, 104);*/
+
+            height: 580px;
+            
+            display: flex;
+            align-items: center;
         }
 
             /**/
             h1{
-                background: #E7AB79;
-                background: rgb(231, 171, 121);
+                /*background: #E7AB79;
+                background: rgb(231, 171, 121);*/
+
+                font-family: 'Lora', serif;
+                font-size: 21px;
+                font-weight: 300px;
+
+                color: #fff;
+
+                text-align: center;
+
+                line-height: 1.6;
             }
 
     /**/
@@ -82,22 +145,52 @@
 
         /**/
         .articulos{
-            background: #3D0000;
-            background: rgb(61, 0, 0);
+            /*background: #3D0000;
+            background: rgb(61, 0, 0);*/
+            background: #000;
 
-            display: flex;
             flex: 2 1 auto;
-            flex-flow: row wrap;
+            display: flex;
+            flex-flow: row wrap;            
 
         }
 
             /**/
             .article{
-                background: #FF0000;
-                background: rgb(255, 0, 0);
+                /*background: #FF0000;
+                background: rgb(255, 0, 0);*/
 
                 flex: 1 1 40%;
+                color: #fff;
+
+                font-size: 13px;
+
+                letter-spacing: 1px;
+
+                margin: 10px 10px 0 0;
+
+                flex: 1 1 45%;
+
+                background: rgb(27, 26, 26);
             }
+
+                .article img{
+                    width: 100%;
+                }   
+
+                h3{
+                    color: #810955;
+                    font-size: 13px;
+                    padding: 10px 0;
+                    margin-top: -80px;   
+                }
+
+                h2{
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    padding: 0px 0 10px 0;
+                    color: #810955;
+                }
 
             /**/
             .navegacion{
@@ -170,4 +263,9 @@
     .aside{
         flex-direction: column;
     }
+}
+
+.img-comida, .img-persona{
+    max-width: 280px;
+    max-height: 500px;
 }
